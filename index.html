@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySite</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav_logo">
+
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h2>Internship Application Form</h2>
+        <div class="f">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="input-name">
+                    <i class="fa-solid fa-user-tie lock"></i>
+                    <input type="text" id="fname" placeholder="FullName" class="detail" required>
+                </div>
+                <div class="input-name">
+                <i class="fa-solid fa-envelope lock"></i>
+                    <input type="text" id="email" placeholder="EmailId" class="detail" required>
+                </div>
+                <div class="input-name">
+                <i class="fa-solid fa-earth-asia lock"></i>
+                    <input type="text" id="country" placeholder="Country" class="detail" required>
+                </div>
+                <div class="input-name">
+                <i class="fa-solid fa-phone lock"></i>
+                    <input type="text" id="phn" placeholder="MobileNo." class="detail" required>
+                </div>
+                <div class="input-name">
+                <i class="fa-brands fa-whatsapp lock"></i>
+                    <input type="text" id="whatsapp" placeholder="WhatsappNo." class="detail" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa-solid fa-venus-mars lock"></i>
+                    <select id="gender" class="detail">
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                <i class="fa-solid fa-building-columns lock"></i>
+                    <input type="text" id="qualification" placeholder="Qualification" class="detail" required>
+                </div>
+                <div class="input-name" id="select">
+                    <i class="fa-solid fa-server lock"></i>
+                <select class="detail" id="domain">
+                    <option>Select a domain</option>
+                    <option>Data Analyst</option>
+                    <option>Business Analyst</option>
+                    <option>Data Science</option>
+                    <option>Machine Learning</option>
+                    <option>Cloud Technology</option>
+                    <option>Web Developer</option>
+                    <option>App Developer</option>
+                    <option>Digital Marketing</option>
+                </select>
+                </div>
+                <div class="input-name">
+                    <input type="checkbox" class="check">
+                    <label>I accept the terms and conditions.</label>
+                </div>
+                <div class="input-name">
+                    <input type="button" class="button" value="Submit" onclick="submitForm()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="config.js"></script>
+    <script src="one.js"></script>
+</body>
+</html>
